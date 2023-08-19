@@ -57,5 +57,5 @@ https://codesenseihub.netlify.app/
 
 ## Feedback
 
-If you have any feedback, please reach out to us at rayabhishek20112000@gmail.com
+If you have any feedback, please reach out to us at himanshusharma1534@gmail.com
 
