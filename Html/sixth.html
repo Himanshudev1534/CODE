@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sixth.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>CODE</title>
+  </head>
+  <body onload="loader()">
+    <!-- loader -->
+    <div class="loader">
+      <svg
+        class="pl"
+        viewBox="0 0 128 128"
+        width="128px"
+        height="128px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="hsl(193,90%,55%)" />
+            <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+          </linearGradient>
+        </defs>
+        <circle
+          class="pl__ring"
+          r="56"
+          cx="64"
+          cy="64"
+          fill="none"
+          stroke="hsla(0,10%,10%,0.1)"
+          stroke-width="16"
+          stroke-linecap="round"
+        />
+        <path
+          class="pl__worm"
+          d="M92,15.492S78.194,4.967,66.743,16.887c-17.231,17.938-28.26,96.974-28.26,96.974L119.85,59.892l-99-31.588,57.528,89.832L97.8,19.349,13.636,88.51l89.012,16.015S81.908,38.332,66.1,22.337C50.114,6.156,36,15.492,36,15.492a56,56,0,1,0,56,0Z"
+          fill="none"
+          stroke="url(#pl-grad)"
+          stroke-width="16"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="44 1111"
+          stroke-dashoffset="10"
+        />
+      </svg>
+    </div>
+    <header>
+      <div class="bar">
+        <i class="fa-solid fa-bars" id="menu" style="color: #ff9000"></i>
+      </div>
+
+      <div class="logo">
+        <a href="home.html"><img src="my-icon (1).png" alt="" /></a>
+      </div>
+      <div class="account">
+        <a href="contact.html">
+          <i class="fa-regular fa-circle-user" style="color: #ff9000"></i
+        ></a>
+      </div>
+      <div class="list">
+        <ul>
+          <li>
+            <a href="book.html">Books</a>
+          </li>
+          <li>
+            <a href="rgpv.html">RGPV</a>
+          </li>
+          <li>
+            <a href="career.html">Career</a>
+          </li>
+          <li>
+            <a href="coding.html">Coding</a>
+          </li>
+          <li>
+            <a href="placement.html">Placement</a>
+          </li>
+          <li>
+            <a href="ai.html">AI Tools</a>
+          </li>
+          <li>
+            <a href="startup.html">Startup</a>
+          </li>
+          <li>
+            <a href="community.html">Community</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <nav>
+      <div class="head">
+        <div class="head_img">
+          <a href="home.html"> <img src="my-icon (1).png" alt="" /></a>
+        </div>
+        <i class="fa-solid fa-xmark" id="cross" style="color: #ff9000"></i>
+      </div>
+
+      <a href="book.html">
+        <div class="block">
+          <p><i class="fa-solid fa-book" style="color: #ffffff"></i> Books</p>
+        </div>
+      </a>
+      <a href="rgpv.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-building-columns" style="color: #ffffff"></i>
+            RGPV
+          </p>
+        </div>
+      </a>
+      <a href="career.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-briefcase" style="color: #ffffff"></i> Career
+          </p>
+        </div>
+      </a>
+      <a href="coding.html">
+        <div class="block">
+          <p><i class="fa-solid fa-code" style="color: #ffffff"></i> Coding</p>
+        </div>
+      </a>
+      <a href="placement.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-user-tie" style="color: #ffffff"></i>Placement
+          </p>
+        </div>
+      </a>
+      <a href="ai.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-microchip" style="color: #ffffff"></i>AI Tools
+          </p>
+        </div>
+      </a>
+      <a href="startup.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-rocket" style="color: #ffffff"></i>Startup
+          </p>
+        </div>
+      </a>
+      <a href="community.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-users" style="color: #ffffff"></i> Community
+          </p>
+        </div>
+      </a>
+      <a href="contact.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-circle-user" style="color: #ffffff"></i
+            >Contact
+          </p>
+        </div>
+      </a>
+    </nav>
+    <section>
+      <div id="typed"><p>&lt;Sixth Semester&gt;</p></div>
+      <span id="element"></span>
+    </section>
+    <div class="rgpv">
+      <div class="box1">
+        <div class="timetable">
+          <a
+            href="https://drive.google.com/file/d/1xYIiS2T69wmU0e75F7TFxWag7iHxq1Fi/view?usp=drive_link"
+            ><button type="button">Scheme</button></a
+          >
+          <a
+            href="https://drive.google.com/file/d/1bMBneOHYNrh8ssSdJgx8MV9IUXF2GGlN/view?usp=drive_link"
+            ><button type="button">Syllabus</button></a
+          >
+        </div>
+      </div>
+      <div class="box2">
+        <div class="shivani">
+          <h1>Shivani</h1>
+          <a
+            href="https://drive.google.com/file/d/1BkMlgUjttvHv7lf2L2K7XM0wRocphJb1/view?usp=drive_link"
+            ><button type="button">(CS601) Machine Learning</button></a
+          >
+          <a
+            href="https://drive.google.com/file/d/1Vr2HAg7uNeJvn9atM6Ri7x0eWkq6H4NA/view?usp=drive_link"
+            ><button type="button">(CS602) Computer Networks</button></a
+          >
+          <a
+            href="https://drive.google.com/file/d/1YCy-qgE82mWBw93EpmqurWpTA-qlXNEs/view?usp=drive_link"
+            ><button type="button">(CS603) Compiler Design</button></a
+          >
+          <a
+            href="https://drive.google.com/file/d/13bDQjkG4cSSZWLrKsw1YNLJDrIXMgJYu/view?usp=drive_link"
+            ><button type="button">(CS604) Project Management</button></a
+          >
+        </div>
+
+        <div class="notes">
+          <h1>Notes</h1>
+          <a
+            href="https://drive.google.com/file/d/1ldT49N8itEiLwJydSbp7hua6gkmDQJVs/view?usp=drive_link"
+            ><button type="button">(CS601) Machine Learning</button></a
+          >
+          <a
+            href="https://drive.google.com/file/d/144DC6lTr92lXj8L-qYusNXN632qonmsH/view?usp=drive_link"
+            ><button type="button">(CS602) Computer Networks</button></a
+          >
+          <a
+            href="https://drive.google.com/file/d/1PHTF8jvEURh4YxcRaqzZEcgamumlkbl7/view?usp=drive_link"
+            ><button type="button">(CS603) Compiler Design</button></a
+          >
+          <a
+            href="https://drive.google.com/file/d/1SulsYiuCkqA0djuYcsnCnXOJIMTlOyMx/view?usp=drive_link"
+            ><button type="button">(CS604) Project Management</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="social">
+        <div class="circle">
+          <a href="mailto:rayabhishek20112000@gmail.com"
+            ><i class="fa-solid fa-envelope" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://www.linkedin.com/in/abhishek-ray-62321120a/"
+            ><i class="fa-brands fa-linkedin" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://github.com/Abhi-Ray/Abhi-Ray"
+            ><i class="fa-brands fa-github" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://wa.link/eqofcj"
+            ><i class="fa-brands fa-whatsapp" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://msng.link/o?Abhi_7247=tg"
+            ><i class="fa-brands fa-telegram" style="color: #ff9000"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="about">
+        <p>
+          Introducing CODE: Unleash Your Potential in the Digital Age! Join the
+          revolution and unlock the power of coding at CODE-the ultimate
+          platform for the young and ambitious! Dive into a world of endless
+          possibilities as you learn, create, and innovate alongside like-minded
+          individuals. With cutting-edge tutorials, real-world projects, and a
+          vibrant community, CODE empowers you to shape the future with your
+          digital prowess. Don't just follow trends—be the trendsetter. Start
+          your coding adventure today and become the tech-savvy leader of
+          tomorrow at CODE!
+        </p>
+      </div>
+
+      <div class="copy">
+        <p>&#169; CODE 2023</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

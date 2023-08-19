@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="book.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>CODE</title>
+  </head>
+  <body onload="loader()">
+    <!-- loader -->
+    <div class="loader">
+      <svg
+        class="pl"
+        viewBox="0 0 128 128"
+        width="128px"
+        height="128px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="hsl(193,90%,55%)" />
+            <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+          </linearGradient>
+        </defs>
+        <circle
+          class="pl__ring"
+          r="56"
+          cx="64"
+          cy="64"
+          fill="none"
+          stroke="hsla(0,10%,10%,0.1)"
+          stroke-width="16"
+          stroke-linecap="round"
+        />
+        <path
+          class="pl__worm"
+          d="M92,15.492S78.194,4.967,66.743,16.887c-17.231,17.938-28.26,96.974-28.26,96.974L119.85,59.892l-99-31.588,57.528,89.832L97.8,19.349,13.636,88.51l89.012,16.015S81.908,38.332,66.1,22.337C50.114,6.156,36,15.492,36,15.492a56,56,0,1,0,56,0Z"
+          fill="none"
+          stroke="url(#pl-grad)"
+          stroke-width="16"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="44 1111"
+          stroke-dashoffset="10"
+        />
+      </svg>
+    </div>
+    <header>
+      <div class="bar">
+        <i class="fa-solid fa-bars" id="menu" style="color: #ff9000"></i>
+      </div>
+
+      <div class="logo">
+        <a href="home.html"><img src="my-icon (1).png" alt="" /></a>
+      </div>
+      <div class="account">
+        <a href="contact.html">
+          <i class="fa-regular fa-circle-user" style="color: #ff9000"></i
+        ></a>
+      </div>
+      <div class="list">
+        <ul>
+          <li>
+            <a href="book.html">Books</a>
+          </li>
+          <li>
+            <a href="rgpv.html">RGPV</a>
+          </li>
+          <li>
+            <a href="career.html">Career</a>
+          </li>
+          <li>
+            <a href="coding.html">Coding</a>
+          </li>
+          <li>
+            <a href="placement.html">Placement</a>
+          </li>
+          <li>
+            <a href="ai.html">AI Tools</a>
+          </li>
+          <li>
+            <a href="startup.html">Startup</a>
+          </li>
+          <li>
+            <a href="community.html">Community</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <nav>
+      <div class="head">
+        <div class="head_img">
+          <a href="home.html"> <img src="my-icon (1).png" alt="" /></a>
+        </div>
+        <i class="fa-solid fa-xmark" id="cross" style="color: #ff9000"></i>
+      </div>
+
+      <a href="book.html">
+        <div class="block">
+          <p><i class="fa-solid fa-book" style="color: #ffffff"></i> Books</p>
+        </div>
+      </a>
+      <a href="rgpv.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-building-columns" style="color: #ffffff"></i>
+            RGPV
+          </p>
+        </div>
+      </a>
+      <a href="career.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-briefcase" style="color: #ffffff"></i> Career
+          </p>
+        </div>
+      </a>
+      <a href="coding.html">
+        <div class="block">
+          <p><i class="fa-solid fa-code" style="color: #ffffff"></i> Coding</p>
+        </div>
+      </a>
+      <a href="placement.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-user-tie" style="color: #ffffff"></i>Placement
+          </p>
+        </div>
+      </a>
+      <a href="ai.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-microchip" style="color: #ffffff"></i>AI Tools
+          </p>
+        </div>
+      </a>
+      <a href="startup.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-rocket" style="color: #ffffff"></i>Startup
+          </p>
+        </div>
+      </a>
+      <a href="community.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-users" style="color: #ffffff"></i> Community
+          </p>
+        </div>
+      </a>
+      <a href="contact.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-circle-user" style="color: #ffffff"></i
+            >Contact
+          </p>
+        </div>
+      </a>
+    </nav>
+    <section>
+      <div id="typed"><p>&lt;Books&gt;</p></div>
+      <span id="element"></span>
+    </section>
+    <div class="books">
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1DwQqSS3jpNctz0dtkQh0DQuRXRVNeZlT/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="atomic.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/15QSSULAmLiVJuIdXdk_SJC3zf0MoCeIY/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="deep.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1k-Y32q_0qIC7nwTJvwRaxsfMBQ80tI_O/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="almanack.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1dB3oEAm4QUvRNIc-qE8QvBznZJ5N9NuC/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="sapiens.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1js1kDN5BCu28PXyn7jwq4TLB3ptQ4V9f/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="cant.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1g7G3vJwi5D1BdtoSfa7nswyh004EiFf4/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="psychology.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/14GmLcz1qVuPGQzR67pPsQ11cXj-WCsk8/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="think-like-a-monk-9781982134488_lg.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1ij8EqoWwys2M5b06EzvkVdKfrxJISG23/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="steve.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/179B9W1Aii-7E-JtZxtJjlTEylUGM5vFB/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="calender.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1mMtB6B-7QLVy0UzJFe9-D9Bfeqw1ZOrC/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="seneca.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1swQeQXeZW8aSXWkw1rj6MTLhCUE8W3Wl/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="ikigai.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1YKF85Y-fP7UH4kaPAqyAzsVeurTdVg4s/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="12.png" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/10_Clqqm5Kxv9d0UEAbvU7CQqBBmxBmk8/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="man_searching.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1MKM3XCiVsGgzNwSGCwvEBLIG_aBR-SXT/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="short_history.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1FQJrazSDGoh2weZRppGZ-rXeHCtvkhBr/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="four.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1dzpJxWFlV7eCIwVQ3ZX19LklT_Fplqpz/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="habit.png" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1Qzj5D8D_mhxY2p_5HVoSj1LjkACb3BwS/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="21.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1_-UVLXn6C1baBtKqbAkE2VPnT9XHp-zu/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="homo.png" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1waks7xLusSDZ7z9gr8VdqpALYin_thMK/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="alchemist.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1I40ZgIH_8Psxro34HAM6BIiGLeo7ROE0/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="war.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1ecu8Fsk9vPLbtt_DpRPbTTR-wSNRRyxq/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="factfulness.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/14dZt-BLTD4GDqh_WmVkqUFr7L5xkC1qz/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="the lessons.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1qOcszpnPHl6qQQ9aHf6Bu4hKTYFyKur1/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="power.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1R_MCdA0urGXPxoH51hQqdXHA2f3nkdVz/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="i will teach.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1QoFskISl4dFkh828O0QZV1BUOd2XdPCn/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="albert.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1akfS1BohUw1W6BIZsrjlDgxuVnanHsj2/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="yogi.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/11H0itrRqMU93UC1PUa_5EAL2Nwvhd16D/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="davinci.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1eVR1nBGNmXLVyLsa4uBrCfEH1MjxYb8Z/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="benjamin.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1CO_c_MJ8-wOubRd_Gsh3d1dntxIRQXZ5/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="sleep.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1_n7CCGJr3eWWFaudJrFu-6UlbunHhuEm/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="5am.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/16o6ZSeUGyiVpFiwx-j3S7NMfK5D1uzp2/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="built.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1t7VN2lx4C3GK6wJyb2be14xQudmF63cZ/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="gogiver.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1DuJJfZj7OApiFhQTXOg6rH3gc4-HgEIB/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="meditations.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1PAk-8VVKGOPiCzRU0v6ywpHOfI5HQw-7/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="ego.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1k-ksyXeo-hmIzrGV16BQ1mA07qcDOi5t/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="stillness.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1-YltT15WjcLO5Vj0zjYV4Z6NOKTEHb-V/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="stoics.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1iqxtT73FAsqG0sJ3WJkqec-e6knAbhxI/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="grit.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1DDCGHUNx9KAOF50pX_3ZLsKP9gyH4Zxq/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="amazon.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1JgRGo3u5pjG1MEoSlBDLHK4KHhcHylGl/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="measure.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1i-9a2Of1FT1uRizTDp5u0mSIUASTuaqY/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="fucked.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/19_lLsCmRlKmGyWGW_w30G_oKZFwBOS1y/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="crime.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/18a5GE6s1ve1hRScef7_qHoTOq1fIbyrv/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="talk.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1Byic23Tje0U9Jwy5X2m_Wl4dSBtfk_xp/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="cheese.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1ftAvVChcHmyfYfOoG6ZtTAAgzEom2eEc/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="beyond.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1SYIqKFfrawKg-Qhu-AfE3jpJU_7pJ8SU/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="dip.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1n3CJf2w8lQAY_QLcvjCSj1ysMQDxGktV/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="limitless.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/13pZB-KZ4vuP_Cqc7-p5vZqXsEYn1NgKg/view?usp=sharing"
+        >
+          <div class="img">
+            <img src="rational.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1qOcszpnPHl6qQQ9aHf6Bu4hKTYFyKur1/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="power.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1BJr4SbbFXx7pPCB-nocqX1gCjna8_OYg/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="compound.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1eO3WQWp1qsOxfpalI7_LIUB72ToeyGhh/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="good and evil.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1lqtoAcPqJiiDFW-3J4ixQoikA5alUqHy/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="babylon.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1Qrq4fdsMdgwNJXXiF6aIhj7C3y8k-lG9/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="subtle.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1iEcx0SzJkHllWglZaDjFBqVMyQviIl-d/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="rich dad.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1OGmkgBCLsuV9g3rRrqC51OgfQXBVBTAV/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="human nature.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1qK813ClShY_A79lndHV4ed9IVYkE8Ah1/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="mind.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1S4DK1t0-_j4-JvIqjM2kVY3FbNU5-sU4/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="murakami.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1IXgVt5rbOkPXMRLYVOeAK2MKDsbDsWD1/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="five move.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1riTi6rmi7j_04ScJ9OLpoETeuzrP8TBl/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="lean.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1-moFab4RyIX5Uk7xNFDB3mED7Sbt7shW/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="hawking.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1LG7dDeuxLDGnhpLTBGfkXzcHZiw_IKyq/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="educated.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1QBNC1YveZ6Q_FcR4KT3dV3oMiIRl0-q2/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="tzu.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1AXyKeopz-bDUKvLBBwNjOPxdLkH_1Bxs/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="thinking.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1wxtC3zKh9YaWQxPXHcY85IjikpiDKRjR/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="fooled.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/19WnG8UJXsL7LneeJ2BW-6Dg1_wLyw9rS/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="hard thing.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1TqWoDL6f4m5KiTWB2CHXa1161RgJf5i1/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="split.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1WdI9-OYDvYTnEZI-qi--uJmoGMDcxUnh/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="principles.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/19y11kTocbNqPMckCtinek1bISVQPQAJk/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="durant.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1SHCVmGTIYXO2XFYm0JtFB9o9Z4jwhHVt/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="swan.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/10C-d52zY5r__TClvjzpl4-yjlbjNs0pL/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="elon.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1j7iMRY17UKjluQu1QBxYwI_cd8gaq6kH/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="tesla.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1YFebk9Y4nFm0I-F1jYhlZlXphIa44LRX/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="win.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1oNvMoWtKIz7MF7GL_k1nnYSYwHv3_dWu/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="leaders.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1SiXq6rwTNPwlsarBGPgPWyhz5GoIBlmG/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="fault.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1Lt99RqSAFEGkbWiSsXHTo0f2Nt3dLbTk/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="clearly.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/192ZdCSdycMPprRGMqzohfxPy9QYCYhm2/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="shoe.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1GNjJMwEXqN6uAKexCSadKVuvF4SxE8Nk/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="hooked.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1u8EV4ywGjeAf1BLjVMo0Mk9bU82PWyQA/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="dilemma.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1GVtmovYAvXl2SdRGf9Lf1egMDNYYMefX/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="siddhartha.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1hAD1W7F6JJkoH27d86_NeQaZ7fUan_vJ/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="digital.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1Jvt6KXHBoq3Vk5YUjNJu0I5Vk8Gffa9f/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="third.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1mR0sEGqLaoeLWR8cw1RBbCDcbieSaOjp/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="indistractable.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/14lFajgBqGrVQFQiHaZDSkxElbcfJYx1x/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="high.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1TJPRKqDxvSCKp-6Oca9rtqfGJrEkC8CZ/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="warofart.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/10UleNr5hoHV0wdLeNT3SynhxzdXb_hpV/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="mindset.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1RUHXnW1zwOP4fAotBV-es73EbK3jNSuy/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="skin.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1UnnZZL9zywl7ALwwnt5yJRs3uZKdL5Ff/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="influence.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1vpsNKJUZ9rwETUfsfRvLR-2XevZICP07/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="monk.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1sUGmCgsslUxN0zpD7lB7ESO0CQbXe4fG/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="reality.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1IqIGvpjYP2MPf0PKVIWikdNFiJNAOF9M/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="marketers.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1XU81yHMYtpEp7qL-yDOOkNnfzPyiocOP/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="4hrs.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1WeubEp1bEcOov4BM-cs_B877vmjyz3TF/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="money.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1N7P8-dNiEQrlWnk29CbB1thqhZY5okke/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="outliers.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1z-nT74xAmz6DCzqnsbYM-67Lm0a0bGbz/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="blink.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1WtI_OVGLDKoSd6JLrPB6-q9tOkpVNlJX/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="rewok.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1vqOKb4TKR3tRmGLxR-9UavotH1JH5scW/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="air.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/112XovPsOpKdmDBAqRmrpEJgr1CGrNvww/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="pollen.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1-YltT15WjcLO5Vj0zjYV4Z6NOKTEHb-V/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="daily.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1lpxlisZ29xfZ2lDBuMRnuF43DvMKEbJ5/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="gatsby.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1dX8Eif5HnEj4R4tT-wek-V9IwTwUfcO0/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="morrie.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1dUL5In6v5xv3k3lWgG7oCSN8HAUeo9Hf/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="letter from stoic.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="book">
+        <a
+          href="https://drive.google.com/file/d/1FLwown4h83CFkuisXPHc7PUD8UQ6xEAc/view?usp=drive_link"
+        >
+          <div class="img">
+            <img src="geeta.jpeg" alt="" />
+          </div>
+        </a>
+      </div>
+    </div>
+    <footer>
+      <div class="social">
+        <div class="circle">
+          <a href="mailto:rayabhishek20112000@gmail.com"
+            ><i class="fa-solid fa-envelope" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://www.linkedin.com/in/abhishek-ray-62321120a/"
+            ><i class="fa-brands fa-linkedin" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://github.com/Abhi-Ray/Abhi-Ray"
+            ><i class="fa-brands fa-github" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://wa.link/eqofcj"
+            ><i class="fa-brands fa-whatsapp" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://msng.link/o?Abhi_7247=tg"
+            ><i class="fa-brands fa-telegram" style="color: #ff9000"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="about">
+        <p>
+          Introducing CODE: Unleash Your Potential in the Digital Age! Join the
+          revolution and unlock the power of coding at CODE-the ultimate
+          platform for the young and ambitious! Dive into a world of endless
+          possibilities as you learn, create, and innovate alongside like-minded
+          individuals. With cutting-edge tutorials, real-world projects, and a
+          vibrant community, CODE empowers you to shape the future with your
+          digital prowess. Don't just follow trends—be the trendsetter. Start
+          your coding adventure today and become the tech-savvy leader of
+          tomorrow at CODE!
+        </p>
+      </div>
+
+      <div class="copy">
+        <p>&#169; CODE 2023</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

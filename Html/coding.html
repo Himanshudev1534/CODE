@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="coding.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>CODE</title>
+  </head>
+  <body onload="loader()">
+    <!-- loader -->
+    <div class="loader">
+      <svg
+        class="pl"
+        viewBox="0 0 128 128"
+        width="128px"
+        height="128px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="hsl(193,90%,55%)" />
+            <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+          </linearGradient>
+        </defs>
+        <circle
+          class="pl__ring"
+          r="56"
+          cx="64"
+          cy="64"
+          fill="none"
+          stroke="hsla(0,10%,10%,0.1)"
+          stroke-width="16"
+          stroke-linecap="round"
+        />
+        <path
+          class="pl__worm"
+          d="M92,15.492S78.194,4.967,66.743,16.887c-17.231,17.938-28.26,96.974-28.26,96.974L119.85,59.892l-99-31.588,57.528,89.832L97.8,19.349,13.636,88.51l89.012,16.015S81.908,38.332,66.1,22.337C50.114,6.156,36,15.492,36,15.492a56,56,0,1,0,56,0Z"
+          fill="none"
+          stroke="url(#pl-grad)"
+          stroke-width="16"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="44 1111"
+          stroke-dashoffset="10"
+        />
+      </svg>
+    </div>
+    <header>
+      <div class="bar">
+        <i class="fa-solid fa-bars" id="menu" style="color: #ff9000"></i>
+      </div>
+
+      <div class="logo">
+        <a href="home.html"><img src="my-icon (1).png" alt="" /></a>
+      </div>
+      <div class="account">
+        <a href="contact.html">
+          <i class="fa-regular fa-circle-user" style="color: #ff9000"></i
+        ></a>
+      </div>
+      <div class="list">
+        <ul>
+          <li>
+            <a href="book.html">Books</a>
+          </li>
+          <li>
+            <a href="rgpv.html">RGPV</a>
+          </li>
+          <li>
+            <a href="career.html">Career</a>
+          </li>
+          <li>
+            <a href="coding.html">Coding</a>
+          </li>
+          <li>
+            <a href="placement.html">Placement</a>
+          </li>
+          <li>
+            <a href="ai.html">AI Tools</a>
+          </li>
+          <li>
+            <a href="startup.html">Startup</a>
+          </li>
+          <li>
+            <a href="community.html">Community</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <nav>
+      <div class="head">
+        <div class="head_img">
+          <a href="home.html"> <img src="my-icon (1).png" alt="" /></a>
+        </div>
+        <i class="fa-solid fa-xmark" id="cross" style="color: #ff9000"></i>
+      </div>
+
+      <a href="book.html">
+        <div class="block">
+          <p><i class="fa-solid fa-book" style="color: #ffffff"></i> Books</p>
+        </div>
+      </a>
+      <a href="rgpv.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-building-columns" style="color: #ffffff"></i>
+            RGPV
+          </p>
+        </div>
+      </a>
+      <a href="career.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-briefcase" style="color: #ffffff"></i> Career
+          </p>
+        </div>
+      </a>
+      <a href="coding.html">
+        <div class="block">
+          <p><i class="fa-solid fa-code" style="color: #ffffff"></i> Coding</p>
+        </div>
+      </a>
+      <a href="placement.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-user-tie" style="color: #ffffff"></i>Placement
+          </p>
+        </div>
+      </a>
+      <a href="ai.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-microchip" style="color: #ffffff"></i>AI Tools
+          </p>
+        </div>
+      </a>
+      <a href="startup.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-rocket" style="color: #ffffff"></i>Startup
+          </p>
+        </div>
+      </a>
+      <a href="community.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-users" style="color: #ffffff"></i> Community
+          </p>
+        </div>
+      </a>
+      <a href="contact.html">
+        <div class="block">
+          <p>
+            <i class="fa-solid fa-circle-user" style="color: #ffffff"></i
+            >Contact
+          </p>
+        </div>
+      </a>
+    </nav>
+    <section>
+      <div id="typed"><p>&lt;Coding&gt;</p></div>
+
+      <span id="element"></span>
+    </section>
+    <div class="all">
+      <div class="part">
+        <div class="img">
+          <img src="c.png" alt="" />
+        </div>
+        <h1>Website</h1>
+        <div class="sec">
+          <a href="https://www.w3schools.com/c/">
+            <button type="button">Link</button>
+          </a>
+          <a href="https://www.programiz.com/c-programming">
+            <button type="button">Link</button>
+          </a>
+          <a href="https://www.geeksforgeeks.org/c-programming-language/">
+            <button type="button">Link</button>
+          </a>
+        </div>
+        <h1>Youtube</h1>
+        <div class="sec">
+          <a
+            href="https://www.youtube.com/watch?v=irqbmMNs2Bo&pp=ygUNZnVsbCBjIGNvdXJzZQ%3D%3D&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=ZSPZob_1TOk&pp=ygUNZnVsbCBjIGNvdXJzZQ%3D%3D&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=KJgsSFOSQv0&list=PLWKjhJtqVAbmUE5IqyfGYEYjrZBYzaT4m&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+        </div>
+        <div class="code">
+          <span><h2>Notes</h2></span>
+          <a
+            href="https://drive.google.com/file/d/1vKd7mhIZL-ELcxMEUSeaLzyF3VSLFPub/view?usp=drive_link"
+            ><button type="button">Link</button></a
+          >
+        </div>
+        <div class="code">
+          <span><h2>Practise</h2></span>
+          <a
+            href="https://drive.google.com/file/d/1tzRFThrDob3NkV-YRXMmgnC66ZHhNKxn/view?usp=drive_link"
+            ><button type="button">Link</button></a
+          >
+        </div>
+      </div>
+
+      <div class="part">
+        <div class="img">
+          <img src="c++.png" alt="" />
+        </div>
+        <h1>Website</h1>
+        <div class="sec">
+          <a href="https://www.w3schools.com/cpp/">
+            <button type="button">Link</button>
+          </a>
+          <a href="https://www.codecademy.com/learn/learn-c-plus-plus">
+            <button type="button">Link</button>
+          </a>
+          <a href="https://www.geeksforgeeks.org/cpp-tutorial/">
+            <button type="button">Link</button>
+          </a>
+        </div>
+        <h1>Youtube</h1>
+        <div class="sec">
+          <a
+            href="https://www.youtube.com/watch?v=z9bZufPHFLU&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=WQoB2z67hvY&list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=8jLOx1hD3_o&pp=ygUQYysrIGZ1bGwgY291cnNlIA%3D%3D&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+        </div>
+        <div class="code">
+          <span><h2>Notes</h2></span>
+          <a
+            href="https://drive.google.com/file/d/1Obe83ZNkListatiJftmYEXCBkUmlrZAZ/view?usp=drive_link"
+            ><button type="button">Link</button></a
+          >
+        </div>
+        <div class="code">
+          <span><h2>Practise</h2></span>
+          <a
+            href="https://drive.google.com/file/d/12rzcNaDRxVNW79ejNkJcSr_wzVBq9Ujw/view?usp=drive_link"
+            ><button type="button">Link</button></a
+          >
+        </div>
+      </div>
+
+      <div class="part">
+        <div class="img">
+          <img src="java.png" alt="" />
+        </div>
+        <h1>Website</h1>
+        <div class="sec">
+          <a href="https://www.codecademy.com/learn/learn-java">
+            <button type="button">Link</button>
+          </a>
+          <a href="https://www.javatpoint.com/java-tutorial">
+            <button type="button">Link</button>
+          </a>
+          <a href="https://www.programiz.com/java-programming">
+            <button type="button">Link</button>
+          </a>
+        </div>
+        <h1>Youtube</h1>
+        <div class="sec">
+          <a
+            href="https://www.youtube.com/watch?v=ntLJmHOJ0ME&list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=cDd-eUtbm2k&list=PLlhM4lkb2sEhfuXL-2BDrJ67WkUdQ2v9b&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=BGTx91t8q50&pp=ygUQamF2YSBmdWxsIGNvdXJzZQ%3D%3D&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+        </div>
+        <div class="code">
+          <span><h2>Notes</h2></span>
+          <a
+            href="https://drive.google.com/file/d/1GL7l4g76McbKsBoVKiDHG9KLP0KJ1rS3/view?usp=drive_link"
+            ><button type="button">Link</button></a
+          >
+        </div>
+        <div class="code">
+          <span><h2>Practise</h2></span>
+          <a
+            href="https://drive.google.com/file/d/13abxleBDzrZUWFjI_11uwDQYx7UOV0gm/view?usp=drive_link"
+            ><button type="button">Link</button></a
+          >
+        </div>
+      </div>
+
+      <div class="part">
+        <div class="img">
+          <img src="python.jpg" alt="" />
+        </div>
+        <h1>Website</h1>
+        <div class="sec">
+          <a href="https://www.w3schools.com/python/">
+            <button type="button">Link</button>
+          </a>
+          <a href="https://www.programiz.com/python-programming">
+            <button type="button">Link</button>
+          </a>
+          <a href="https://www.geeksforgeeks.org/python-programming-language/">
+            <button type="button">Link</button>
+          </a>
+        </div>
+        <h1>Youtube</h1>
+        <div class="sec">
+          <a
+            href="https://www.youtube.com/watch?v=gfDE2a7MKjA&pp=ygUSZnVsbCBweXRob24gY291cnNl&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=sCOw5y1RQpY&pp=ygUSZnVsbCBweXRob24gY291cnNl&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=XKHEtdqhLK8&pp=ygUSZnVsbCBweXRob24gY291cnNl&pbjreload=102"
+          >
+            <button type="button">Link</button>
+          </a>
+        </div>
+        <div class="code">
+          <span><h2>Notes</h2></span>
+          <a
+            href="https://drive.google.com/file/d/1NQvimVSpu_tS1lTTpKrIg1guaJMVcqhm/view?usp=drive_link"
+            ><button type="button">Link</button></a
+          >
+        </div>
+        <div class="code">
+          <span><h2>Practise</h2></span>
+          <a
+            href="https://drive.google.com/file/d/12_WyqmmeiAmkNv-nAwBd1G5bArCc-s7X/view?usp=drive_link"
+            ><button type="button">Link</button></a
+          >
+        </div>
+      </div>
+      <div class="notes">
+        <h1>Notes</h1>
+        <a
+          href="https://drive.google.com/file/d/1DolkJ9YfSSVFU6-gbvU1CKYBhDIaC-u9/view?usp=drive_link"
+        >
+          <button type="button">Data Structures and Algorithms</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1WLev0lDKrYChkbpyiKW63arJHPm6wc-G/view?usp=drive_link"
+        >
+          <button type="button">Linux</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1aA8WNetX0IPy-gtiEg8ZxfDjclJpq_FU/view?usp=drive_link"
+        >
+          <button type="button">System Design</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1TriocPnLomdTg8z55RVHR5iL2cKqEpiK/view?usp=drive_link"
+        >
+          <button type="button">React JS</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1HQcW0TBp2Jx9W8uGMF0Vz6TYSNDhnrut/view?usp=drive_link"
+        >
+          <button type="button">SQL</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1-Q9KkLYOGLkStclc1aQ5jHsbTqLwM-bL/view?usp=drive_link"
+        >
+          <button type="button">Operating Systems</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1t02v0qXgFwIpM9eamrta0kB_Lt2ipZQV/view?usp=drive_link"
+        >
+          <button type="button">OOPS</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1TRXzzMYuftq1fT30FvAJsjCmvngG7aor/view?usp=drive_link"
+        >
+          <button type="button">Kotlin</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1RD8f7hYpIjs0kauKkrzIJcXUlVhZnlSh/view?usp=drive_link"
+        >
+          <button type="button">Javascript</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1w7WKCv0X3w_kUPPQLL76yee0_MWm24TO/view?usp=drive_link"
+        >
+          <button type="button">HTML</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1z8-PcOs6COANJjYmZwjYzQV7WcJ4IHLb/view?usp=drive_link"
+        >
+          <button type="button">CSS</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1tWPmK7sRYr5Rv_DDpdWmal3Zc3oG4VxK/view?usp=drive_link"
+        >
+          <button type="button">Git</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1s2LjN0FxIB9wG_vbVyuE4_LRfy56c9xb/view?usp=drive_link"
+        >
+          <button type="button">DBMS</button>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/11zi5C91aJYox9GirunQR5MVdeu980PHH/view?usp=drive_link"
+        >
+          <button type="button">Computer Network</button>
+        </a>
+      </div>
+      <div class="platform">
+        <h1>Practice Platform</h1>
+        <a
+          href="https://practice.geeksforgeeks.org/explore?page=1&sortBy=submissions&utm_source=geeksforgeeks&utm_medium=main_header&utm_campaign=practice_header"
+        >
+          <button type="button">Geeks For Geeks</button>
+        </a>
+        <a href="https://www.hackerrank.com/dashboard">
+          <button type="button">HackerRank</button> </a
+        ><a href="https://www.hackerearth.com/practice/">
+          <button type="button">HackerEarth</button>
+        </a>
+        <h1>Interview Prepration</h1>
+        <a href="https://leetcode.com/">
+          <button type="button">LeetCode</button> </a
+        ><a href="https://www.interviewbit.com/">
+          <button type="button">InterviewBit</button>
+        </a>
+        <h1>Competitive Coding</h1>
+        <a href="https://www.codechef.com/">
+          <button type="button">CodeChef</button> </a
+        ><a href="https://codeforces.com/">
+          <button type="button">CodeForces</button>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="social">
+        <div class="circle">
+          <a href="mailto:rayabhishek20112000@gmail.com"
+            ><i class="fa-solid fa-envelope" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://www.linkedin.com/in/abhishek-ray-62321120a/"
+            ><i class="fa-brands fa-linkedin" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://github.com/Abhi-Ray/Abhi-Ray"
+            ><i class="fa-brands fa-github" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://wa.link/eqofcj"
+            ><i class="fa-brands fa-whatsapp" style="color: #ff9000"></i
+          ></a>
+        </div>
+        <div class="circle">
+          <a href="https://msng.link/o?Abhi_7247=tg"
+            ><i class="fa-brands fa-telegram" style="color: #ff9000"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="about">
+        <p>
+          Introducing CODE: Unleash Your Potential in the Digital Age! Join the
+          revolution and unlock the power of coding at CODE-the ultimate
+          platform for the young and ambitious! Dive into a world of endless
+          possibilities as you learn, create, and innovate alongside like-minded
+          individuals. With cutting-edge tutorials, real-world projects, and a
+          vibrant community, CODE empowers you to shape the future with your
+          digital prowess. Don't just follow trends—be the trendsetter. Start
+          your coding adventure today and become the tech-savvy leader of
+          tomorrow at CODE!
+        </p>
+      </div>
+
+      <div class="copy">
+        <p>&#169; CODE 2023</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
